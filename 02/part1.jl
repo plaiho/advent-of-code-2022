@@ -1,7 +1,7 @@
 using DelimitedFiles
 
-decoderDict = Dict("A" => -1, "B" => -2, "C" => -3, "X" => 1, "Y" => 2, "Z" => 3)
-scorerDict = Dict(0 => 3, -1 => 0, -2 => 6, 1 => 6, 2 => 0)
+decodingDict = Dict("A" => -1, "B" => -2, "C" => -3, "X" => 1, "Y" => 2, "Z" => 3)
+scoringDict = Dict(0 => 3, -1 => 0, -2 => 6, 1 => 6, 2 => 0)
 
 println(string("Reading data from file ", ARGS[1]))
 playlog = readdlm(ARGS[1])
